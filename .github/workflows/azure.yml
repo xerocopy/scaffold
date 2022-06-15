@@ -1,17 +1,17 @@
-name: Azure Python 3.6
+name: Azure Python 3.5
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.6
+    - name: Set up Python 3.5.10
       uses: actions/setup-python@v1
       with:
-        python-version: 3.6
+        python-version: 3.5.10
     - name: Install dependencies
       run: |
-        make install
+        make install-azure
     - name: Lint
       run: |
         make lint
