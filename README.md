@@ -2,4 +2,4 @@
 
 # scaffold
 
-## this is a project scaffold for Python
+this is a project scaffold for Python
